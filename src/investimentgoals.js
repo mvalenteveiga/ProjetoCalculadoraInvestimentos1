@@ -17,10 +17,10 @@ export function generateReturnsArray(
   const finalReturnRate =
     returnTimeFrame === "monthly"
       ? 1 + returnRate / 100
-      : convertToMonthlyReturnRate(1 + finalReturnRate / 100);
+      : convertToMonthlyReturnRate(1 + returnRate / 100);
 
   const finalTimeHorizon =
-    timeHorizon === "monthly" ? timeHorizon : timeHorizon * 12;
+    timePeriod === "monthly" ? timeHorizon : timeHorizon * 12;
 
   const referenceInvestmentObject = {
     investedAmount: startingAmount,

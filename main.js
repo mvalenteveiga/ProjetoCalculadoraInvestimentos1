@@ -19,8 +19,8 @@ function renderProgression(evt) {
   const timeAmount = Number(document.getElementById("time-amount").value);
   const timeAmountPeriod = document.getElementById("time-amount-period").value;
   const returnRate = Number(
-    document.getElementById("return-rate").value
-  ).replace(",", ".");
+    document.getElementById("return-rate").value.replace(",", ".")
+  );
   const returnRatePeriod = document.getElementById("evaluation-period").value;
   const taxRate = Number(
     document.getElementById("tax-rate").value.replace(",", ".")
